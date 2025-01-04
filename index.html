@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personalized News Aggregator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Hero Section -->
+  <header class="hero-section" id="home">
+    <nav class="navbar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero-content">
+      <h1>Personalized News</h1>
+      <p>Your source for the latest and tailored news content.</p>
+      <button class="cta-button" onclick="document.querySelector('#about').scrollIntoView({ behavior: 'smooth' });">Learn More</button>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Preferences Section -->
+    <section class="preferences-section">
+      <input type="text" id="keywords" placeholder="Enter topics you're interested in...">
+      <button id="fetch-news">Fetch News</button>
+    </section>
+
+    <!-- News Container -->
+    <section id="news-container" class="news-grid">
+      <!-- News articles will be injected here via JavaScript -->
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <h2>About Us</h2>
+      <p>Our news aggregator curates personalized news content just for you. Whether you're interested in technology, sports, or global news, we've got you covered.</p>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+      <h2>Features</h2>
+      <ul>
+        <li><strong>Customizable Feed:</strong> Get news based on your preferences and interests.</li>
+        <li><strong>Real-Time Updates:</strong> Stay informed with news updates from trusted sources.</li>
+        <li><strong>User-Friendly Interface:</strong> Navigate seamlessly through our clean, intuitive layout.</li>
+        <li><strong>Responsive Design:</strong> Access news on any device, anytime.</li>
+      </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <h2>Contact Us</h2>
+      <p>If you have any questions or feedback, feel free to reach out:</p>
+      <ul>
+        <li><strong>Email:</strong> <a href="mailto:support@newsaggregator.com">support@newsaggregator.com</a></li>
+        <li><strong>Phone:</strong> <a href="tel:+11234567890">+1 (123) 456-7890</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
